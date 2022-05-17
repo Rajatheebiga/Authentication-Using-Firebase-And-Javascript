@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+.page{
+    background-color:#3d3d5c;
+}
+body{
+    background-color: red;
+}
+
+#leftside{
+    background-color:#e6e6ff;
+    /* margin:50px; */
+    display: flex;
+    flex-wrap:wrap; 
+    justify-content: center;
+    margin-left:120px;
+    margin-right:120px;
+    border-radius:10px;
+
+}
+#rightside{
+    background-color:#e6e6ff;
+    /* #ccccff */
+    /* margin:50px; */
+    display: flex;
+    flex-wrap:wrap; 
+    justify-content: center;
+    margin-left:120px;
+    margin-right:120px;
+    border-radius:10px;
+}
+#dbOutput-msg{
+    display: flex;
+  flex-wrap:wrap; 
+   justify-content: center; 
+   text-align: center;
+   font-family:  Calibri,'Times New Roman', Times, serif;
+   letter-spacing: 1px;
+   font-size: 20px;
+   color: #99ccff;
+}
+#dbOutput{
+  display: flex;
+flex-wrap:wrap; 
+ justify-content: center; 
+ text-align: center;
+ font-family:  Calibri,'Times New Roman', Times, serif;
+ letter-spacing: 1px;
+ font-size: 50px;
+ font-weight: bold;
+ color: #e6e6e6;
+}
+#dbOutput-author{
+  display: flex;
+flex-wrap:wrap; 
+ justify-content: center; 
+ text-align: center;
+ font-style: italic;
+ color: white;
+}
+#newUser{
+    display: flex;
+    flex-wrap:wrap; 
+    justify-content: center;
+    font-family:  Calibri,'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    color: #e0e0eb;
+    font-size: 25px;
+}
+#oldUser{
+    display: flex;
+    flex-wrap:wrap; 
+    justify-content: center;
+    font-family:  Calibri,'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    color: #e0e0eb;
+    font-size: 25px;
+}
+.birthdayMsg{
+    margin-left:220px;
+    margin-right:220px;
+    border-radius:5px;
+}
+#logOutBtn{
+    display: flex;
+    flex-wrap:wrap; 
+    justify-content: center;
+
+}
+#errorMsg{
+    text-align: center;
+    color: red;
+    font-style: bold;
+}
+#successMsg{
+    text-align: center;
+    color: blue;
+    font-style: bold;
+}
+

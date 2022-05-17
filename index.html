@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <title>check</title>
+</head>
+
+<body>
+<div class="page">
+        <div class="birthdayMsg">
+            <br>
+            <br><span id="dbOutput"></span><br>
+            <br><span id="dbOutput-msg"></span>
+            <br><span id="dbOutput-author"></span>
+            <br>
+            <span id="logOutBtn"><button type="button" id="userSignOutBtn"
+                class="btn btn-success btn-lg active">Sign Out</button></span>
+        </div>
+  
+
+    <div class="container" id="signInSignUp">
+        <div class="row">
+            <div class="col-md-6">
+                <h5 id="newUser">Create Account</h5>
+                <div id="leftside">
+                    <form id="form-signUp">
+                        <div>
+                            <br>
+                            <label for="name"> Name</label> <br>
+                            <input type="text" id="name" placeholder="Email" required>
+                            <br><br>
+                            <label for="dateOfBirth">Date of Birth</label><br>
+
+                            <input type="date" id="dateOfBirth" placeholder="dateOfBirth" required><br>
+
+                            <br>
+
+                            <label for="userEmail"> Email</label> <br>
+                            <input type="email" id="userEmail" placeholder="Email" required>
+                            <br><br>
+                            <label for="userPassword">Password</label> <br>
+                            <input type="password" id="userPassword" placeholder="Password" required>
+                            <br><br>
+                            <div>
+                                <button type="submit" id="userSignup" class="btn btn-success btn-sm active">Sign
+                                    Up</button>
+                                    <br>
+                                        <span id="successMsg"></span>
+                            </div>
+                            <br>
+                        
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <br><br><br>
+                <h5 id="oldUser" >Sign in with your Account</h5>
+                    <div id="rightside">
+                        <form id="form-signIn">
+
+
+                            <div>
+                                <br>
+                                <label for="usersignInEmail"> Email</label> <br>
+                                <input type="email" id="usersignInEmail" placeholder="Email" required>
+                                <br><br>
+                                <label for="userSignInPassword">Password</label> <br>
+                                <input type="password" id="userSignInPassword" placeholder="Password" required>
+                                <br><br>
+                                <div>
+                                    <button type="submit" id="userSignInBtn" class="btn btn-success btn-sm active">Sign
+                                        In</button>
+                                        <br>
+                                        <span id="errorMsg"></span>
+                                </div>
+                            </div>
+                            <br>
+                        </form>
+                    </div>
+
+            </div>
+        </div>
+        <br> <br> <br> <br> <br> <br>
+
+        <script src="./check.js"></script>
+    </div>
+</div>
+</body>
+
+</html>
